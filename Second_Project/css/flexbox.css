@@ -1,0 +1,51 @@
+
+@media screen and (min-width: 768px)  {
+
+    .top-nav ul {
+        display: flex;
+        flex-direction:row;
+    }
+
+    figure {
+        display: flex;
+        justify-content: right;
+    }
+    
+    figure figcaption {
+        align-self: flex-start;
+    }
+    .introduction img {
+        order: 1;
+    }
+
+    .Portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .figure-image {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mobile {
+        display: none;
+    }
+    .full {
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px)  {
+
+    .main-header {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    h1 {
+        align-self: center;
+        margin-right: auto;
+    }
+}

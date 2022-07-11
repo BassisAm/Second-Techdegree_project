@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  text-align: center;
+  background: ghostwhite;
+}
+
+/*--- TOP ---*/
+
+header {
+  margin: 0 auto 50px;
+  padding: 40px 20px;
+  max-width: 100vw;
+  background-color: #5396a8;
+}
+
+.main-header {
+  margin-bottom: 50px;
+}
+
+.top-nav ul li {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+.introduction figure img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+.introduction figure figcaption {
+  font-size: 1.25rem;
+  margin: 15px;
+}
+
+/*--- MIDDLE ---*/
+main {
+  padding: 40px 20px;
+  max-width: 100vw;
+  background-color: white;
+}
+
+h2 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.figure-image {
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+}
+.figure-image img {
+  height: auto;
+  margin: 10% auto;
+}
+.figure-image h3 {
+  margin-bottom: 15px;
+}
+
+.Contact {
+  margin: 10% auto 10px;
+}
+
+.Contact p {
+  margin: 10px auto;
+}
+
+/*-- BOTTOM --*/
+
+footer {
+  padding: 0 20px;
+  height: 100px;
+  background-color: #5396a8;
+  border-top-color: grey;
+  border-top-style: ridge;
+}
+
+.footer-nav-links a {
+  font-size: 1.1rem;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+
+@media screen and (min-width: 320px) {
+  .top-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .top-nav ul li {
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 10px 30px;
+    background-color: white;
+    text-transform: uppercase;
+    list-style: none;
+    text-decoration: none;
+  }
+  .figure-image img {
+    max-width: 100%;
+    margin: 17.5px auto;
+  }
+
+  #name {
+    position: relative;
+    bottom: -35px;
+    text-align: left;
+  }
+  .footer-nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    flex-direction: row;
+  }
+  .full {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+  
+  .top-nav ul {
+    background-color: white;
+    margin-top: 10px;
+  }
+
+  .top-nav ul li {
+    background-color: white;
+  }
+
+  figure figcaption {
+    font-size: 2rem;
+  }
+
+  .figure-image {
+    max-width: 45%;
+    margin: auto 10px;
+    max-height: 20%;
+  }
+}
+
+
+@media screen and (min-width: 1024px)  {
+
+  h1 {
+    font-size: 2.5rem;
+    flex-grow: 1;
+  }
+  figure figcaption {
+    font-size: 2.5rem;
+  }
+.figure-image {
+    max-width: 30%;
+    margin: auto 3px;
+  }
+  .top-nav ul,
+  .top-nav ul li {
+      background-color: #5396a8;
+  }
+}
